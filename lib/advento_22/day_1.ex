@@ -67,3 +67,10 @@ defmodule Advento.Day1 do
 
   defp return_bigest_2({acc, bigest1, bigest2, bigest3}), do: {bigest1, bigest2, bigest3}
 end
+
+
+an exception was raised:
+    ** (RuntimeError) [#Ecto.Changeset<action: nil, changes: %{anio: "2022", dia: "16", dni: "X1286394T", institucion_financiera: "Santander", mes: "Diciembre"}, errors: [no_cuenta: {"can't be blank", [validation: :required]}], data: #ResuelveCore.Contexts.Contracts.RtdEs.CartaPoderBancos<>, valid?: false>]
+        (resuelve_core_api 2.0.0) lib/resuelve_core/helpers/contracts/contract_request_helper.ex:441: anonymous fn/3 in ResuelveCore.Helpers.Contracts.ContractRequestHelper.async_approve/3
+        (elixir 1.12.3) lib/task/supervised.ex:90: Task.Supervised.invoke_mfa/2
+        (stdlib 3.17.2.1) proc_lib.erl:226: :proc_lib.init_p_do_apply/3
